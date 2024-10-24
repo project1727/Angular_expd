@@ -1,0 +1,57 @@
+.exerciser-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .exerciser-container {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+h3 {
+    color: #a61f9b; /* Modern purple color */
+    font-family: Arial, sans-serif;
+}
+
+input[type="file"] {
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px solid #a61f9b;
+    border-radius: 5px;
+}
+
+textarea {
+    border: 2px solid #a61f9b;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    resize: none;
+    background-color: #fff;
+    color: #333;
+}
+
+button {
+    width: 150px;
+    background-color: #a61f9b;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8c1981;
+}
+
+button:focus {
+    outline: none;
+}

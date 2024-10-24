@@ -1,0 +1,367 @@
+<div class="sub-toolbar" style="display: none">
+  <!--connect-->
+  <div class="icon-group">
+    <!-- <mat-spinner disable> -->
+
+    <button (click)="ConnectionMethod()">
+      <i class="material-icons" matTooltip="Check hardware Connection"
+        >settings_input_component</i
+      >
+    </button>
+    <!-- </mat-spinner> -->
+  </div>
+
+  <!--Volatge-->
+  <header>
+    <div class="header-section">
+      <div class="voltage-flash-container">
+        <!-- Voltage Setup Combo Box -->
+        <!-- <mat-form-field class="custom-form-field" appearance="outline"  > -->
+        <div class="custom-form-field">
+          <mat-label>Voltage Setup</mat-label>
+          <mat-select>
+            <mat-option value="Variable">Variable</mat-option>
+            <mat-option value="Fixed">Fixed</mat-option>
+          </mat-select>
+        </div>
+        <!-- </mat-form-field> -->
+
+        <!-- Flash Button -->
+        <div class="icon-group" id="flash_on">
+          <i class="material-icons" matTooltip="Change the voltage">flash_on</i>
+        </div>
+      </div>
+
+      <!--mode selction-->
+
+      <!-- <div class="mode-selection">
+        <label for="mode-selection" class="mode-label">Mode Selection</label>
+        <select id="mode-selection" class="setup-select">
+          <option>EX_PD</option>
+          <option>Other</option>
+        </select>
+      </div> -->
+
+      <!-- <mat-form-field class="custom-form-field reduced-height" appearance="outline" > -->
+      <div class="custom-form-field">
+        <mat-label>Mode Selection</mat-label>
+        <mat-select>
+          <mat-option value="EX_PD">EX_PD</mat-option>
+          <mat-option value="Other">Other</mat-option>
+        </mat-select>
+      </div>
+      <!-- </mat-form-field> -->
+
+      <div class="icon-group">
+        <button (click)="RunStopMethod()">
+          <i
+            class="fa-solid fa-circle-play"
+            matTooltip="Start/Stop Capture"
+          ></i>
+        </button>
+        <button class="open-dialog-btn" (click)="openFileDialog()">
+          <i class="fas fa-folder-open">B</i>
+        </button>
+
+        <input
+          type="file"
+          id="fileInput"
+          (change)="handleFileInput($event)"
+          style="display: none"
+          webkitdirectory
+          directory
+          multiple
+        />
+
+        <i
+          class="fa-solid fa-folder-open"
+          (click)="openDirectoryDialog()"
+          matTooltip="Load Tracefile"
+          >E</i
+        >
+
+        <i class="material-icons" matTooltip="I3C Network">desktop_windows</i>
+
+        <i
+          class="fa-solid fa-gear"
+          matTooltip="Device Setup"
+          routerLink="BusConfig"
+        ></i>
+      </div>
+
+      <!--UI SCRIPt-->
+      <div class="user-profile" matTooltip="Master/Slave UI window">
+        <span class="profile-icon">UI</span>
+      </div>
+      <div class="buttons">
+        <button class="button master-slave" routerLink="Master-UI">
+          Master
+        </button>
+        <button class="button master-slave" routerLink="Slave-UI">Slave</button>
+        <div class="user-profile">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <button class="button master-slave" routerLink="Master-Script">
+          Master
+        </button>
+        <button class="button master-slave" routerLink="Slave-Script">
+          Slave
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- <div class="controls">
+  <i class="fa-solid fa-plug"></i>
+  <img src="data:image/png;base64,BASE64_ENCODED_IMAGE_DATA" alt="Icon">
+
+  <div class="control-item">
+    <label for="voltage-setup">Voltage Setup</label>
+    <select id="voltage-setup">
+      <option>Variable</option>
+      <option>Fixed</option>
+    </select>
+    <button class="button">⚡</button>
+  </div>
+  <div class="control-item">
+    <label for="mode-selection">Mode Selection</label>
+    <select id="mode-selection">
+      <option>EX_PD</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <div class="file-content">
+    <i class="fa-solid fa-circle-play"></i>
+
+      <i class="fa-solid fa-folder-open"></i>
+
+    <i class="fa-solid fa-gear"></i>
+  </div>
+</div>
+<div class="user-profile">
+  <span class="profile-icon">UI</span>
+</div>
+<div class="buttons">
+  <button class="button master-slave">Master</button>
+  <button class="button master-slave">Slave</button>
+  <div class="user-profile">
+    <i class="fa-solid fa-code"></i>
+  </div>
+  <button class="button master-slave">Master</button>
+  <button class="button master-slave">Slave</button>
+</div>
+<i class="fa-solid fa-magnifying-glass"></i> -->
+
+<!-- START : Header Bottom -->
+<div class="header-bottom">
+  <div class="header-bottom__left">
+    <div class="header-bottom__controls">
+      <button class="header-bottom-control is-active">
+        <span class="header-bottom-control__icon">
+          <svg
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.81288 4.16228C6.29328 4.16228 5.79495 4.36869 5.42754 4.73611C5.06012 5.10352 4.85371 5.60185 4.85371 6.12145C4.85371 6.64106 5.06012 7.13938 5.42754 7.5068C5.79495 7.87422 6.29328 8.08063 6.81288 8.08063C7.33249 8.08063 7.83081 7.87422 8.19823 7.5068C8.56565 7.13938 8.77206 6.64106 8.77206 6.12145C8.77206 5.60185 8.56565 5.10352 8.19823 4.73611C7.83081 4.36869 7.33249 4.16228 6.81288 4.16228ZM2.89453 6.12145C2.89359 5.16707 3.241 4.24516 3.87155 3.52875C4.5021 2.81234 5.37244 2.35069 6.31922 2.23045C7.26599 2.11021 8.2241 2.33965 9.01371 2.87569C9.80333 3.41174 10.3702 4.21755 10.6078 5.14186H18.6492L18.7286 5.15558C19.5528 5.30106 20.3313 5.63829 21.0012 6.14006C21.7888 6.74545 22.4863 7.70251 22.4863 9.06022C22.4863 10.4179 21.7908 11.375 21.0003 11.9804C20.3306 12.482 19.5525 12.8192 18.7286 12.9649L18.6492 12.9786H6.81288C6.58072 12.9786 6.05664 13.1235 5.5884 13.4978C5.15052 13.8484 4.85371 14.3226 4.85371 14.9377C4.85371 15.5529 5.15052 16.027 5.5884 16.3777C6.05664 16.7519 6.58072 16.8969 6.81288 16.8969H17.5884V14.448L22.1601 17.8765L17.5884 21.3051V18.8561H6.81288C6.06546 18.8561 5.12016 18.5113 4.36391 17.9059C3.57731 17.278 2.89453 16.2827 2.89453 14.9377C2.89453 13.5928 3.57731 12.5985 4.36391 11.9696C5.12016 11.3632 6.06546 11.0194 6.81288 11.0194H18.4798C18.8461 10.9459 19.3781 10.7549 19.8091 10.4258C20.244 10.0927 20.5271 9.66168 20.5271 9.06022C20.5271 8.45875 20.243 8.02871 19.8091 7.69467C19.4136 7.40392 18.9603 7.20148 18.4798 7.10104H10.6078C10.3671 8.02233 9.79929 8.82452 9.01042 9.35782C8.22155 9.89111 7.26555 10.1191 6.32091 9.99909C5.37628 9.87912 4.50761 9.41944 3.87709 8.70588C3.24657 7.99232 2.89731 7.07367 2.89453 6.12145Z"
+              fill="#fff"
+            />
+          </svg>
+        </span>
+        <span class="header-bottom-control__text text-14">Connected</span>
+      </button>
+      <button class="header-bottom-control has-animated">
+        <span class="header-bottom-control__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="29"
+            height="29"
+            fill="none"
+          >
+            <circle
+              cx="14.591"
+              cy="14.39"
+              r="14.034"
+              fill="#1480C3"
+              stroke="#fff"
+              stroke-width=".728"
+            />
+            <path
+              fill="#fff"
+              d="M11.377 9.112a1.78 1.78 0 0 1 1.78 1.78v7.122a1.78 1.78 0 0 1-3.56 0v-7.121a1.78 1.78 0 0 1 1.78-1.78Zm5.934 0a1.78 1.78 0 0 1 1.78 1.78v7.122a1.78 1.78 0 0 1-3.56 0v-7.121a1.78 1.78 0 0 1 1.78-1.78Z"
+            />
+          </svg>
+        </span>
+        <span class="header-bottom-control__text text-14">Recording</span>
+      </button>
+      <button class="header-bottom-control">
+        <span class="header-bottom-control__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="22"
+            fill="none"
+          >
+            <path
+              fill="#fff"
+              d="M24.666 19H3.334V5.667h21.334m0-2.667H14L11.333.333h-8A2.667 2.667 0 0 0 .667 3v16a2.667 2.667 0 0 0 2.666 2.667h21.334A2.667 2.667 0 0 0 27.332 19V5.667A2.667 2.667 0 0 0 24.667 3Zm-5.334 14.667h-2.666v-5.334h-4L18 7l5.333 5.334h-4v5.333Z"
+            />
+          </svg>
+        </span>
+        <span class="header-bottom-control__text text-14">File Upload</span>
+      </button>
+      <button class="header-bottom-control">
+        <span class="header-bottom-control__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="27"
+            fill="none"
+          >
+            <path
+              fill="#fff"
+              d="M18 22.667a1.333 1.333 0 0 0-1.333-1.334h-1.333v-2.666h5.333A2.667 2.667 0 0 0 23.334 16V2.667A2.667 2.667 0 0 0 20.667 0H7.334a2.667 2.667 0 0 0-2.667 2.667V16a2.667 2.667 0 0 0 2.667 2.667h5.333v2.666h-1.333A1.333 1.333 0 0 0 10 22.667H.667v2.666H10a1.333 1.333 0 0 0 1.334 1.334h5.333A1.333 1.333 0 0 0 18 25.333h9.334v-2.666H18ZM7.334 16V2.667h13.333V16H7.334Z"
+            />
+          </svg>
+        </span>
+        <span class="header-bottom-control__text text-14">Network</span>
+      </button>
+      <button class="header-bottom-control">
+        <span class="header-bottom-control__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="25"
+            fill="none"
+          >
+            <path
+              fill="#fff"
+              d="M22.666 11c2.534 0 4.667 2.133 4.667 4.667 0 3.467-4.666 8.667-4.666 8.667S18 19.134 18 15.667C18 13.133 20.133 11 22.666 11Zm0 6.4c.934 0 1.734-.8 1.6-1.6 0-.8-.8-1.6-1.6-1.6s-1.6.667-1.6 1.6c0 .8.667 1.6 1.6 1.6Zm2-11.733H3.334V19H16c.387.907.84 1.8 1.333 2.667h-14A2.667 2.667 0 0 1 .667 19V3A2.657 2.657 0 0 1 3.333.333h8L14 3h10.666a2.667 2.667 0 0 1 2.667 2.667v4.453a7.292 7.292 0 0 0-2.666-1.48V5.667Z"
+            />
+          </svg>
+        </span>
+        <span class="header-bottom-control__text text-14">File location</span>
+      </button>
+      <button class="header-bottom-control">
+        <span class="header-bottom-control__icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="27"
+            height="28"
+            fill="none"
+          >
+            <path
+              fill="#fff"
+              d="M24.533 14.88a1.334 1.334 0 0 1 0-1.76l1.707-1.92a1.333 1.333 0 0 0 .16-1.56l-2.667-4.613a1.333 1.333 0 0 0-1.427-.64l-2.506.507a1.333 1.333 0 0 1-1.534-.88l-.813-2.44a1.333 1.333 0 0 0-1.267-.907h-5.333a1.333 1.333 0 0 0-1.333.907l-.747 2.44a1.333 1.333 0 0 1-1.533.88l-2.574-.507a1.333 1.333 0 0 0-1.333.64L.666 9.64A1.333 1.333 0 0 0 .8 11.2l1.693 1.92a1.333 1.333 0 0 1 0 1.76L.8 16.8a1.333 1.333 0 0 0-.134 1.56l2.667 4.614a1.333 1.333 0 0 0 1.427.64l2.506-.507a1.333 1.333 0 0 1 1.534.88l.813 2.44a1.334 1.334 0 0 0 1.333.907h5.334a1.333 1.333 0 0 0 1.266-.907l.814-2.44a1.333 1.333 0 0 1 1.533-.88l2.507.506a1.334 1.334 0 0 0 1.426-.64l2.667-4.613a1.333 1.333 0 0 0-.16-1.56l-1.8-1.92Zm-1.987 1.787 1.067 1.2-1.707 2.96-1.573-.32a4 4 0 0 0-4.6 2.666l-.507 1.494h-3.413l-.48-1.52a4 4 0 0 0-4.6-2.667l-1.573.32-1.734-2.947 1.067-1.2a4 4 0 0 0 0-5.333l-1.067-1.2 1.707-2.933 1.573.32a4 4 0 0 0 4.6-2.667l.507-1.506h3.413l.507 1.52a4 4 0 0 0 4.6 2.666l1.573-.32 1.707 2.96-1.067 1.2a4 4 0 0 0 0 5.307Zm-9.026-8a5.333 5.333 0 1 0 0 10.666 5.333 5.333 0 0 0 0-10.666Zm0 8a2.666 2.666 0 1 1 0-5.332 2.666 2.666 0 0 1 0 5.332Z"
+            />
+          </svg>
+        </span>
+        <span class="header-bottom-control__text text-14">Settings</span>
+      </button>
+    </div>
+  </div>
+  <div class="header-bottom__right">
+    <div class="header-bottom__switch text-18">
+      <div class="header-bottom__switch-links font-md">
+        <a href="#">Master</a>
+        <a href="#">Slave</a>
+      </div>
+
+      <div class="mod-switch text-18">
+        <input type="checkbox" id="toggle-switch" />
+        <label for="toggle-switch">
+          <span class="mod-switch__dot"></span>
+          <span class="mod-switch__text">UI</span>
+          <span class="mod-switch__text">Script</span>
+        </label>
+      </div>
+    </div>
+    <div class="mod-theme-toggle">
+      <input
+        type="checkbox"
+        id="theme-switch"
+        (change)="toggleDarkMode($event)"
+      />
+      <label for="theme-switch">
+        <!-- SVG icons for moon and sun -->
+        <svg
+          class="mod-theme-toggle__moon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="none"
+        >
+          <path
+            fill="#fff"
+            d="M10.683 10.683a7 7 0 0 0 0-9.9c-.28-.28-.102-.797.293-.757a9.959 9.959 0 0 1 6.071 2.88c3.906 3.904 3.906 10.236 0 14.141-3.905 3.905-10.237 3.905-14.142 0a9.958 9.958 0 0 1-2.879-6.072c-.04-.395.477-.572.758-.292a7 7 0 0 0 9.9 0Z"
+          />
+        </svg>
+        <svg
+          class="mod-theme-toggle__sun"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9 1C9 0.447754 9.44775 0 10 0C10.5522 0 11 0.447754 11 1V2C11 2.55225 10.5522 3 10 3C9.44775 3 9 2.55225 9 2V1Z"
+            fill="#FFBE18"
+          ></path>
+          <path
+            d="M15 10C15 12.7615 12.7615 15 10 15C7.23853 15 5 12.7615 5 10C5 7.23853 7.23853 5 10 5C12.7615 5 15 7.23853 15 10Z"
+            fill="#FFBE18"
+          ></path>
+          <path
+            d="M10 17C9.44775 17 9 17.4478 9 18V19C9 19.5522 9.44775 20 10 20C10.5522 20 11 19.5522 11 19V18C11 17.4478 10.5522 17 10 17Z"
+            fill="#FFBE18"
+          ></path>
+          <path
+            d="M2.92896 4.34314C2.53833 3.95251 2.53833 3.31946 2.92896 2.92883C3.31946 2.53833 3.95264 2.53833 4.34314 2.92883L5.05017 3.63599C5.4408 4.02649 5.4408 4.65967 5.05017 5.05017C4.65967 5.44067 4.02649 5.44067 3.63599 5.05017L2.92896 4.34314Z"
+            fill="#FFBE18"
+          ></path>
+          <path
+            d="M14.9497 14.9497C14.5592 15.3402 14.5592 15.9734 14.9497 16.3639L15.6569 17.071C16.0474 17.4615 16.6805 17.4615 17.071 17.071C17.4615 16.6805 17.4615 16.0474 17.071 15.6569L16.3639 14.9497C15.9734 14.5592 15.3402 14.5592 14.9497 14.9497Z"
+            fill="#FFBE18"
+          ></path>
+          <path
+            d="M1 11C0.447754 11 0 10.5522 0 10C0 9.44775 0.447754 9 1 9H2C2.55225 9 3 9.44775 3 10C3 10.5522 2.55225 11 2 11H1Z"
+            fill="#FFBE18"
+          ></path>
+          <path
+            d="M17 10C17 10.5522 17.4478 11 18 11H19C19.5522 11 20 10.5522 20 10C20 9.44775 19.5522 9 19 9H18C17.4478 9 17 9.44775 17 10Z"
+            fill="#FFBE18"
+          ></path>
+          <path
+            d="M3.74829 16.551C3.32532 16.906 2.69446 16.8508 2.33948 16.4279C1.9845 16.0048 2.03967 15.374 2.46277 15.0189L3.22876 14.3762C3.65186 14.0212 4.28259 14.0764 4.6377 14.4994C4.99268 14.9225 4.9375 15.5532 4.5144 15.9083L3.74829 16.551Z"
+            fill="#FFBE18"
+          ></path>
+          <path
+            d="M15.3623 5.50037C15.7173 5.92346 16.348 5.97864 16.7711 5.62366L17.5371 4.98083C17.9602 4.62585 18.0154 3.99512 17.6604 3.57202C17.3054 3.14893 16.6747 3.09375 16.2516 3.44885L15.4855 4.09155C15.0625 4.44653 15.0073 5.07739 15.3623 5.50037Z"
+            fill="#FFBE18"
+          ></path>
+        </svg>
+      </label>
+    </div>
+
+    <a href="#" class="header-bottom__help-link text-20 font-md">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        fill="none"
+      >
+        <path
+          fill="#fff"
+          d="M9 7h2V5H9m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8Zm0-18a10 10 0 1 0 0 20 10 10 0 0 0 0-20ZM9 15h2V9H9v6Z"
+        />
+      </svg>
+      <span>Help</span>
+    </a>
+  </div>
+</div>
+<!-- END : Header Bottom -->

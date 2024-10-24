@@ -1,0 +1,28 @@
+/* html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+} */
+
+/* header, footer {
+
+  color: white;
+
+  text-align: center;
+  flex-shrink: 0;
+} */
+
+/* main {
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px;
+} */

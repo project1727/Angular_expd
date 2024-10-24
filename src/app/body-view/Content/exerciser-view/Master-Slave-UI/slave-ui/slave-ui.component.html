@@ -1,0 +1,155 @@
+<mat-tab-group (selectedTabChange)="onTabChange($event)">
+    <mat-tab label="Bus">
+
+      <!-- <div class="dropdown-container">
+        <label for="messageType">Message Type</label>
+        <select id="messageType" [(ngModel)]="selectedMessageType">
+          <option *ngFor="let messageType of messageTypes">{{ messageType }}</option>
+        </select>
+      </div>
+      
+      <div class="number-bar">
+        <div class="number-box" *ngFor="let number of numbers">{{ number }}</div>
+      </div> -->
+      <div class="dropdown-container">
+        <label for="messageType">Message Type</label>
+        <select id="messageType" [(ngModel)]="selectedMessageType">
+          <option *ngFor="let messageType of messageTypes">{{ messageType }}</option>
+        </select>
+      </div>
+      <div class="grid-container">
+        <!-- Header Row with column numbers -->
+        <div class="header">8</div>
+        <div class="header">7</div>
+        <div class="header">6</div>
+        <div class="header">5</div>
+        <div class="header">4</div>
+        <div class="header">3</div>
+        <div class="header">2</div>
+        <div class="header">1</div>
+        <div class="header">0</div>
+      
+        <!-- Row 1 -->
+
+        
+        <div class="item" style="grid-column: 1 / span 7;">Reserved Address 7E</div>
+        <div class="item" style="grid-column: 8 / span 1;">W</div>
+        <div class="item" style="grid-column: 9 / span 1;">
+          <mat-select  [(value)]="ACKNack" >
+            <mat-option value="ACK">ACK</mat-option>
+            <mat-option value="NACK">NACK</mat-option>
+          </mat-select>
+        </div>
+      
+        <!-- Row 2 -->
+        <div class="item" style="grid-column: 1 / span 9; background-color: #D0BCF2;">
+          BroadCast Address
+        </div>
+    
+         <!-- Blank Line -->
+        <div class="blank-line" style="grid-column: 1 / span 9;">&nbsp;</div>
+        <ng-container *ngIf="ACKNack === 'ACK' &&  selectedMessageType ==='BroadCaste'">
+        <!-- Row 3 -->
+        <div class="item" style="grid-column: 1 / span 8;">
+          <mat-select  name="slavetype" placeholder="Select Command">
+          <mat-option *ngFor="let key of BrodCasteType" [value]="key">{{ key }}</mat-option>
+          </mat-select>
+        </div>
+        <div class="item" style="grid-column: 9 / span 1;">T</div>
+      
+        <!-- Row 4 -->
+        <div class="item" style="grid-column: 1 / span 8; background-color: #D0BCF2;">
+          Command
+        </div>
+        <div class="item" style="grid-column: 9 / span 1; background-color: #e5e0ed;">T</div>
+      
+      
+      
+     
+        </ng-container>
+        <ng-container *ngIf="ACKNack === 'ACK'">
+
+          
+         <!-- Blank Line -->
+        <div class="blank-line" style="grid-column: 1 / span 9;">&nbsp;</div>
+        <!-- Row 5 -->
+        <div class="item" style="grid-column: 1 / span 8;"><input matInput placeholder="Enter Data"></div>
+    
+        <div class="item" style="grid-column: 9 / span 1;">T/P</div>
+             <!-- Row 6 -->
+        <div class="item" style="grid-column: 1 / span 9; background-color: #C0C0C0;">
+          Data
+        </div>
+               
+        </ng-container>
+        <ng-container *ngIf="ACKNack === 'ACK'">
+        <div class="blank-line" style="grid-column: 1 / span 9;">&nbsp;</div>
+   
+        <div class="item" style="grid-column: 1 / span 5;">Data Count</div>
+    
+         <div class="item" style="grid-column: 6 / span 4;"><input matInput placeholder="enter value"></div> 
+      
+        </ng-container>
+   </div>
+      
+      
+      <!-- Number Bar UI -->
+      <!-- <div class="number-bar">
+        <div class="number-box" *ngFor="let number of numbers">{{ number }}</div>
+      </div> -->
+      
+      <!-- Conditional UI for BroadCast -->
+      <!-- <div *ngIf="selectedMessageType === 'BroadCast'">
+        <div class="broadcast-ui">
+          <div class="address-row">
+            <span>Reserved Address 7E</span>
+            <input type="text" value="W" class="input-small" />
+            <select class="dropdown-small">
+              <option>NACK</option>
+              <option>ACK</option>
+            </select>
+          </div>
+          <div class="address-bar">
+            <span>BroadCast Address</span>
+            <button class="ack-button">Ack</button>
+          </div>
+        </div>
+      </div> -->
+      
+    </mat-tab>
+    <mat-tab label="Sys">
+        <!-- This content will be shown only when "Sys" tab is selected -->
+      
+  
+            <form *ngIf="selectedTab === 'Sys'" class="exerciser-form">
+                <div class="period-container">
+                <mat-form-field appearance="outline" class="form-field">
+                  <mat-label>Frequency (KHz)</mat-label>
+                  <input matInput placeholder="Enter frequency">
+                </mat-form-field>
+            </div>
+            </form>
+            <div class="gap-delay-container">
+                <mat-form-field appearance="outline" class="form-field">
+                  <mat-label>InterMessage Gap</mat-label>
+                  <div class="wrapcontainer">
+                  <input matInput placeholder="InterMessage Gap">
+                  <mat-select>
+                      <mat-option value="mode1">sec</mat-option>
+                      <mat-option value="mode2">ms</mat-option>
+                      <mat-option value="mode2">us</mat-option>
+                      <mat-option value="mode2">ns</mat-option>
+                        </mat-select>
+                      </div>
+                </mat-form-field>
+          
+        \
+                </div>
+                <div class="button-container">
+                    <button mat-raised-button color="primary">Add</button>
+                  </div>
+         
+     </mat-tab> 
+     <mat-tab label="Summary">
+        </mat-tab>
+</mat-tab-group>

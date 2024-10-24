@@ -1,0 +1,218 @@
+
+
+<mat-card-title mat-dialog-title class="tittleclass">Registers</mat-card-title>
+
+
+<mat-dialog-content  *ngIf="nodeDetail.nodeType !== enodeType.I2C_Slave.toString()">
+
+ <!-- BCR Section -->
+ <mat-card>
+  <fieldset class="fieldset">
+    <legend class="legend">BCR - Bus Characteristic Register</legend>
+    <div class="bcr-register">
+      <table class="bus-characteristic-table">
+        <thead>
+          <tr>
+            <th>Bit[7]</th>
+            <th>Bit[6]</th>
+            <th>Bit[5]</th>
+            <th>Bit[4]</th>
+            <th>Bit[3]</th>
+            <th>Bit[2]</th>
+            <th>Bit[1]</th>
+            <th>Bit[0]</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="2">Device Role</td>
+            <td>SDR/HDR</td>
+            <td>Bridge Id</td>
+            <td>Offline Cap</td>
+            <td>IBI Payload</td>
+            <td>IBI Request</td>
+            <td>MAX SPEED</td>
+          </tr>
+          <tr>
+            <td colspan="2">{{lblRole}}</td>
+            <td>
+              <mat-select [(value)]="selectedSDR" (selectionChange)="onSelectedSDRChange()">
+                <mat-option value="SDR Only">SDR Only</mat-option>
+                <mat-option value="HDR Capable">HDR Capable</mat-option>
+              </mat-select>
+            </td>
+            <td>
+              <mat-select [(value)]="selectBridgeID" (selectionChange)="onSelectBridgeIDChange()">
+                <mat-option value="No">No</mat-option>
+                <mat-option value="Yes">Yes</mat-option>
+              </mat-select>
+            </td>
+            <td>
+              <mat-select [(value)]="offlineCap" (selectionChange)="onOfflineCapChange()">
+                <mat-option value="Always res">Always respond</mat-option>
+                <mat-option value="Not always respond">Not always respond</mat-option>
+              </mat-select>
+            </td>
+            <td>
+              <mat-select [(value)]="ibiPayload" (selectionChange)="onIbiPayloadChange()">
+                <mat-option value="No data">No Data</mat-option>
+                <mat-option value="One or more data">One or more data</mat-option>
+            
+              </mat-select>
+            </td>
+            <td>
+              <mat-select [(value)]="ibiRequest" (selectionChange)="onIbiRequestChange()">
+                <mat-option value="Not Capable">Not Capable</mat-option>
+                <mat-option value="Capable">Capable</mat-option>
+              </mat-select>
+            </td>
+            <td>
+              <mat-select [(value)]="maxSpeed" (selectionChange)="onMaxSpeedChange()">
+                <mat-option value="No Limitation">No Limitation</mat-option>
+                <mat-option value="Limitation">Limitation</mat-option>
+               
+              </mat-select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </fieldset>
+</mat-card>
+<p>{{BCRValue}}</p>
+   <!-- DCR Section -->
+
+
+
+
+   <!-- DCR Section -->
+<mat-card>
+  <fieldset>
+    <legend>DCR - Device Characteristic Register</legend>
+    <div class="Dcr-register">
+      <mat-select [(value)]="selectedDCR" (selectionChange)="onDCRChange($event.value)">
+        <!-- <mat-option *ngFor="let key of DCRType" [value]="key">{{ key }}</mat-option> -->
+        <mat-option *ngFor="let key of DCRType" [value]="key">{{ key }}</mat-option>
+      </mat-select>
+      <input *ngIf="nodeDetail.DCR.toString() === 'Custom'" type="text" placeholder="Enter Dcr value in hex" />
+    </div>
+  </fieldset>
+</mat-card>
+<p>{{selectedDCR}}</p>
+
+
+
+   <!-- PID Section -->
+      <mat-card>
+        <fieldset>
+          <legend >PID</legend>
+          <div class="bcr-register">
+            <table class="bus-characteristic-table">
+              <thead>
+                <tr>
+                  <th>Bit[47-33]</th>
+                  <th>Bit[32]</th>
+                  <th *ngIf="selectedType === 'Vendor'">Bit[31-16]</th>
+                  <th *ngIf="selectedType === 'Vendor'">Bit[15-12]</th>
+                  <th *ngIf="selectedType === 'Vendor'">Bit[11-0]</th>
+                 <th  *ngIf="selectedType === 'Random'" >Bit[31:0]</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr >
+                 
+                  <td>
+              
+                    <mat-select [(ngModel)]="selectedMfgType" (selectionChange)="onMfgTypeChange()">
+                      <mat-option *ngFor="let type of cmbMfgType" [value]="type">{{ type }}</mat-option>
+                    </mat-select>
+                    Manufacture ID</td>
+                  <td>Type</td>
+                  <td *ngIf="selectedType === 'Vendor'">Part ID</td>
+                  <td *ngIf="selectedType === 'Vendor'">Instance ID</td>
+                
+                  <td *ngIf="selectedType === 'Vendor'">vendor Def</td>
+                  <td *ngIf="selectedType === 'Random'">RandomValue</td>
+                </tr>
+                <tr>
+                <tr style="width: 200px;">
+                  <td  >
+                    <mat-select *ngIf="selectedMfgType ==='MIPI'" [(ngModel)]="selectedMID" (selectionChange)="onMIDChange()">
+                      <mat-option *ngFor="let mid of cmbMID" [value]="mid">{{ mid }}</mat-option>
+                    </mat-select>
+                    <div *ngIf="selectedMfgType ==='Custom'">
+                      <!-- <label for="txtMID">MID Text:</label> -->
+                      <input [(ngModel)]="txtMID" (blur)="txtMID_LostFocus()" />
+                    </div>
+                  </td>
+                
+                  <td>
+              
+                    <select [(ngModel)]="selectedType" (selectionChange)="onTypeChange()">
+                      <option *ngFor="let type of cmbType" [value]="type">{{ type }}</option>
+                    </select>
+                  </td>
+                  <td *ngIf="selectedType === 'Vendor'">
+                    <input [(ngModel)]="txtPartID" (blur)="txtPartID_LostFocus($event)" />
+                  </td>
+                  <td *ngIf="selectedType === 'Vendor'">
+                  <input [(ngModel)]="txtInstance" (blur)="txtInstance_LostFocus($event)" />
+                  </td>
+                  <td *ngIf="selectedType === 'Vendor'">
+                  <input [(ngModel)]="txtVendorDef" (blur)="txtVendorDef_LostFocus($event)" />
+                  </td>
+                  <td *ngIf="selectedType === 'Random'">
+                    <input [(ngModel)]="txtRandom" (blur)="txtRandom_LostFocus($event)" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+           
+          </div>
+          </fieldset>
+          <p>{{pidValue}}</p>
+        </mat-card>
+</mat-dialog-content>
+
+
+<mat-dialog-content  *ngIf="nodeDetail.nodeType === enodeType.I2C_Slave.toString()">
+  <fieldset class="fieldset">
+    <legend class="legend">Maximum write Length</legend>
+<div>
+<label>MSB</label>
+<input matInput value="00" style="text-decoration: underline;">
+<label>LSB</label>
+<input matInput value="10" style="text-decoration: underline;">
+</div>
+    </fieldset>
+</mat-dialog-content>
+<div mat-dialog-actions>
+  <!-- <button mat-button (click)="onCancel($event)">No Thanks</button> -->
+  <button mat-button (click)="confirm()">Ok</button>
+</div>
+
+
+<!-- <div>
+  <select [(ngModel)]="selectedMID" (change)="onMIDChange()">
+    <option *ngFor="let item of midList" [value]="item.id">{{ item.name }}</option>
+  </select>
+  <select [(ngModel)]="mfgType" (change)="onMfgTypeChange()">
+    <option *ngFor="let type of mfgTypeList">{{ type }}</option>
+  </select>
+  <input [(ngModel)]="txtMID" [hidden]="isMIDHidden" (blur)="onMIDBlur()" />
+
+  <select [(ngModel)]="pidType" (change)="onPIDTypeChange()">
+    <option *ngFor="let type of pidTypeList">{{ type }}</option>
+  </select>
+
+  Controls for "Vendor" and "Random" -->
+  <!-- <div *ngIf="pidType === 'Vendor'">
+    <input [(ngModel)]="partID" (blur)="onPartIDBlur()" />
+    <input [(ngModel)]="instanceID" (blur)="onInstanceBlur()" />
+    <input [(ngModel)]="vendorDef" (blur)="onVendorDefBlur()" />
+  </div>
+  <div *ngIf="pidType === 'Random'">
+    <input [(ngModel)]="randomVal" (blur)="onRandomBlur()" />
+  </div> 
+</div> -->

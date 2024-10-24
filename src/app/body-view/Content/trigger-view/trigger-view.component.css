@@ -1,0 +1,216 @@
+/* .mod-setup { */
+/* padding: 14px;
+  background-color: var(--color-gray-light);
+  border: 1px solid var(--color-gray-dark);
+  border-radius: 10px;
+  overflow: hidden; */
+/* } */
+
+.mod-setup .mod-block-title {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .mod-setup .mod-block-title {
+    margin-bottom: 20px;
+  }
+}
+
+.mod-setup .wrapper-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+  min-height: 35px;
+  border-radius: 10px;
+  padding: 6px 10px;
+  background-color: var(--color-white);
+  text-align: left;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Arial;
+  border: .2px solid #B4B4B4;
+}
+
+@media screen and (max-width: 768px) {
+  .mod-setup .wrapper-dropdown {
+    border-radius: 6px;
+  }
+}
+
+.mod-setup .scrollable-menu {
+  height: auto;
+  overflow-x: hidden;
+}
+
+.mod-setup .selected-display svg {
+  pointer-events: none;
+}
+
+.mod-setup .arrow {
+  margin-left: 10px;
+  margin-right: 10px;
+  rotate: 180deg;
+}
+
+
+
+.mod-setup svg {
+  transition: all 0.3s;
+}
+
+.mod-setup .wrapper-dropdown::before {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  margin-top: -2px;
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: #fff transparent;
+}
+
+.mod-setup .rotated {
+  transform: rotate(-180deg);
+}
+
+.mod-setup .wrapper-dropdown .dropdown {
+  transition: 0.3s;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 99;
+  box-shadow: inherit;
+  background: inherit;
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  overflow: hidden;
+}
+
+.mod-setup .wrapper-dropdown .dropdown li {
+  padding: 8px 15px;
+  overflow: hidden;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+.mod-setup .wrapper-dropdown .dropdown li:last-child {
+  border-bottom: none;
+}
+
+.mod-setup .dropdown {
+  padding: 0.5rem;
+}
+
+.mod-setup .wrapper-dropdown .dropdown li:hover {
+  background-color: #f3f3f3;
+}
+
+.mod-setup .wrapper-dropdown.active .dropdown {
+  opacity: 1;
+  visibility: visible;
+
+
+}
+
+.mod-setup .mod-dropdown {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 0 26px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .mod-setup .mod-dropdown {
+    padding: 0;
+    font-size: 15px;
+    margin-bottom: 16px;
+    justify-content: space-between;
+  }
+}
+
+.mod-setup .mod-setup__section {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #1480C333;
+  padding: 16px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .mod-setup .mod-setup__section {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+.mod-setup .mod-setup__title {
+  color: var(--color-secondary-dark-2);
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: var(--color-gray-light);
+}
+
+.mod-setup .mod-setup__list {
+  display: flex;
+  gap: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .mod-setup .mod-setup__list {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+.mod-setup .mod-setup__item {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  align-items: center;
+  gap: 20px;
+  color: #1A3881;
+}
+
+@media screen and (max-width: 768px) {
+  .mod-setup .mod-setup__item {
+ font-size: 14px;
+  }
+}
+
+.mod-setup .mod-setup__value {
+  width: 160px;
+  padding: 8px;
+  border-radius: 10px;
+  display: block;
+  background: var(--color-white);
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .mod-setup .mod-setup__value {
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 6px;
+  }
+}

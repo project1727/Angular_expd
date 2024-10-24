@@ -1,0 +1,41 @@
+
+
+<form>
+  <div class="wrap-container">
+    <!-- Frequency -->
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Frequency (KHz)</mat-label>
+          <input matInput [(ngModel)]="SysOD.freq" name="frequency" placeholder="Enter frequency">
+        </mat-form-field>
+  </div>
+
+  <!-- High Period -->
+  <div class="wrap-container">
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>High Period (ns)</mat-label>
+      <input matInput [(ngModel)]="SysOD.highTime" name="highPeriod" placeholder="Enter high period">
+    </mat-form-field>
+
+    <!-- Low Period -->
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>Low Period (ns)</mat-label>
+      <input matInput [(ngModel)]="SysOD.lowTime" name="lowPeriod" placeholder="Enter low period">
+    </mat-form-field>
+  </div>
+
+  
+
+    <!-- tCAS -->
+    <div class="wrap-container">
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>tCAS(ns)</mat-label>
+      <input matInput [(ngModel)]="SysOD.tCAS" name="clkDataDelay" placeholder="Enter delay">
+    </mat-form-field>
+    </div>
+  
+
+  <!--Add Button-->
+  <div class="button-container">
+    <button mat-raised-button color="primary" (click)="onButtonClick()">Add</button>
+  </div>
+</form>

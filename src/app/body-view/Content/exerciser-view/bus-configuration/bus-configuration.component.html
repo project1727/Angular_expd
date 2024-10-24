@@ -1,0 +1,86 @@
+<!-- <app-registers (dataToParent)="receiveData($event)"></app-registers> -->
+<div class="bus-configuration">
+  <mat-toolbar color="primary">
+   
+    <span>Exerciser View - Bus Configuration</span>
+    <span class="spacer"></span>
+    <button mat-icon-button>
+      <mat-icon >more_vert</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <div class="scrollable-form">
+    <form class="configuration-form">
+
+      <!--Node-->
+      <mat-form-field appearance="outline">
+          <mat-label>Node Type</mat-label>
+              <mat-select [(ngModel)]="nodeDetail.nodeType" name="NodeType">
+                  <mat-option *ngFor="let key of NodeTypes" [value]="key">{{ key }}</mat-option>
+              </mat-select>
+          </mat-form-field>
+   
+      
+      <!--Interface-->
+      <mat-form-field appearance="outline">
+        <mat-label>Interface</mat-label>
+        <mat-select [(ngModel)]="nodeDetail.deviceType" name="DeviceType">
+          <mat-option *ngFor="let key of DeviceTypes" [value]="key">{{ key }}</mat-option>
+       
+        </mat-select>
+       </mat-form-field>
+
+       <!--Termination-->
+      <mat-form-field appearance="outline">
+        <mat-label>Termination</mat-label>
+        <mat-select [(ngModel)]="nodeDetail.termination" name="Termination">
+          <mat-option *ngFor="let key of Termination" [value]="key">{{ key }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+       <!--Static Address-->
+      <mat-form-field appearance="outline" *ngIf="nodeDetail.nodeType === enodeType.I3C_Slave.toString() || nodeDetail.nodeType === enodeType.Sec_Master.toString() || nodeDetail.nodeType === enodeType.I2C_Slave.toString()">
+        <mat-label>Static Address</mat-label>
+        <input matInput type="text"  [(ngModel)]="nodeDetail.staticAddress" name="StaticAddress">
+      </mat-form-field>
+
+
+      <!--Volatge-->
+      <mat-form-field appearance="outline">
+        <mat-label>Voltage(V)</mat-label>
+        <input matInput type="text" [(ngModel)]="nodeDetail.voltage" name="Voltage">
+      </mat-form-field>
+
+     <!--SLve TYpe-->
+          <mat-form-field appearance="outline" *ngIf="nodeDetail.nodeType === enodeType.I3C_Slave.toString()">
+            <mat-label>Slave Type</mat-label>
+            <mat-select [(ngModel)]="nodeDetail.slaveVersion" name="slavetype">
+              <mat-option *ngFor="let key of slaveType" [value]="key">{{ key }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+     <!--Trigger Mode-->
+      <mat-form-field appearance="outline" *ngIf="nodeDetail.nodeType === enodeType.Master.toString()">
+       <mat-label>Trigger Mode</mat-label>
+        <mat-select [(ngModel)]="nodeDetail.triggerSelection" name="Trigger">
+          <mat-option *ngFor="let key of TriggerMode" [value]="key">{{ key }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+   <!--Spike filter-->
+    <p *ngIf="nodeDetail.nodeType === enodeType.I2C_Slave">
+      <mat-slide-toggle labelPosition="before" color="primary" [(ngModel)]="nodeDetail.spikeFilterEnable">
+        Spike Filter
+      </mat-slide-toggle>
+    </p>
+  </form>
+<!-- <p>{{nodeDetail.}}</p> -->
+  
+    <div class="button-group">
+      <!--View Register-->
+      <button mat-raised-button  class="BusButton" (click)="openDialog()">View Registers</button>
+      <!--Add Device-->
+      <button mat-raised-button class="BusButton" (click)="addDevice()">Add Device</button>
+    </div>
+  </div>
+</div>

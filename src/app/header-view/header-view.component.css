@@ -1,0 +1,25 @@
+/*
+mat-toolbar {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  mat-toolbar-row {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  mat-toolbar-row:not(:first-child) {
+    margin-top: 0;
+  }
+
+  .app-main-toolbar,
+  .app-sub-toolbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+   */

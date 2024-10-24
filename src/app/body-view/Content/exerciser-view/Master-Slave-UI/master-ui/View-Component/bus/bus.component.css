@@ -1,0 +1,43 @@
+.twofield {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px; /* Adds some spacing between rows */
+}
+
+.label-container {
+  background-color: #004085; /* Dark blue background */
+  color: rgb(250, 244, 244); /* White text */
+  padding: 8px;
+  min-width: 150px; /* Adjust the width of the label as needed */
+  text-align: left;
+  border: 1px solid black;
+  margin-right: 8px; /* Space between label and selection field */
+}
+
+.selection-container {
+  background-color: #e7eaee;
+  padding: 8px;
+  min-width: 200px; /* Minimum width for the selection field */
+  text-align: left;
+  border: 1px solid rgb(27, 26, 26);
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.period-container,
+.gap-delay-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.period-container .form-field,
+.gap-delay-container .form-field {
+  width: 48%;
+}
+
+.mat-checkbox {
+  margin-left: 8px;
+}

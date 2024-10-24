@@ -1,0 +1,121 @@
+<!-- <app-bus-configuration></app-bus-configuration> -->
+<router-outlet> </router-outlet>
+
+<div class="">
+  <div class="mod-block-title sticky-top">
+    <div class="mod-block-title__text text-18 font-md">Exerciser View</div>
+    <div class="mod-block-title__links">
+      <button class="mod-block-title__link">Load</button>
+      <button class="mod-block-title__link">Save</button>
+    </div>
+  </div>
+  <div class="mod-block-secondar">
+    <!-- START : options -->
+    <div class="mod-options">
+      <div class="mod-options__title">Choose Voltage Level</div>
+      <div class="mod-options__content">
+        <div>Variable</div>
+
+        <div class="mod-options__input-list">
+          <div>
+            <div class="mod-options__radio">
+              <input type="radio" name="options" id="one-eight" value="1.8" />
+              <label for="one-eight">1.8</label>
+            </div>
+          </div>
+          <div>
+            <div class="mod-options__radio">
+              <input type="radio" name="options" id="one-nine" value="1.9" />
+              <label for="one-nine">1.9</label>
+            </div>
+          </div>
+
+          <button class="mod-btn mod-options__btn">Apply</button>
+        </div>
+      </div>
+    </div>
+    <!-- END : options -->
+
+    <!-- START : Device setup -->
+    <div class="mod-device-setup">
+      <div class="mod-device-setup__title">Device setup</div>
+
+      <div class="mod-device-setup__list">
+        <div class="mod-device-setup__item">
+          <div class="mod-device-setup__label">Node Type</div>
+
+          <div class="mod-device-setup__radio-list">
+            <div>
+              <input type="radio" name="nodeType" id="master" checked />
+              <label for="master">Master</label>
+            </div>
+            <div>
+              <input type="radio" name="nodeType" id="slave" />
+              <label for="slave">SPMI_Slave</label>
+            </div>
+          </div>
+        </div>
+        <div class="mod-device-setup__item">
+          <div class="mod-device-setup__label">Interface</div>
+
+          <div class="mod-device-setup__radio-list">
+            <div>
+              <input type="radio" name="interface" id="internal" checked />
+              <label for="internal">Internal</label>
+            </div>
+            <div>
+              <input type="radio" name="interface" id="external" />
+              <label for="external">External</label>
+            </div>
+          </div>
+        </div>
+        <div class="mod-device-setup__item">
+          <div class="mod-device-setup__label">Termination</div>
+
+          <div class="mod-device-setup__radio-list">
+            <div>
+              <input type="radio" name="termination" id="on" />
+              <label for="on">On</label>
+            </div>
+            <div>
+              <input type="radio" name="termination" id="off" checked />
+              <label for="off">Off</label>
+            </div>
+          </div>
+        </div>
+        <div class="mod-device-setup__item">
+          <div class="mod-device-setup__label">Voltage</div>
+
+          <div class="mod-device-setup__single-option">
+            <div class="mod-device-setup__value">Variable</div>
+          </div>
+        </div>
+        <div class="mod-device-setup__item">
+          <div class="mod-device-setup__label">Master Mode</div>
+
+          <div class="mod-device-setup__radio-list">
+            <div>
+              <input type="radio" name="master-mode" id="multiple" checked />
+              <label for="multiple">Multiple</label>
+            </div>
+            <div>
+              <input type="radio" name="master-mode" id="sole" />
+              <label for="sole">Sole</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mod-device-setup__footer">
+        <button
+          disabled
+          class="mod-btn--ghost mod-device-setup__btn mod-device-setup__btn--remove"
+        >
+          Remove Device
+        </button>
+        <button disabled class="mod-btn mod-device-setup__btn">Apply</button>
+      </div>
+    </div>
+    <!-- END : Device setup -->
+  </div>
+</div>
