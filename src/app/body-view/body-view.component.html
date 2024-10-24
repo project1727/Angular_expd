@@ -1,0 +1,74 @@
+<!-- <mat-tab-group> -->
+<!-- <mat-tab label="Default-View"> -->
+<!-- <mat-grid-list cols="3" rowHeight="2:1" gutterSize="10px"> -->
+<!-- Setup View -->
+<!-- <mat-grid-tile colspan="1" rowspan="1" class="setup-view"> -->
+<!-- </mat-grid-tile> -->
+<!-- Plot View -->
+<!-- <mat-grid-tile colspan="2" rowspan="1" class="plot-view"> -->
+<!-- </mat-grid-tile> -->
+<!-- Exerciser View -->
+<!-- <mat-grid-tile colspan="1" rowspan="1" class="exerciser-view"> -->
+<!-- </mat-grid-tile> -->
+<!-- Decoded Result -->
+<!-- <mat-grid-tile colspan="1" rowspan="1" class="decoded-result"> -->
+<!-- </mat-grid-tile> -->
+<!-- Selected Frame View -->
+<!-- <mat-grid-tile colspan="1" rowspan="1" class="selected-frame-view"> -->
+<!-- </mat-grid-tile>
+    </mat-grid-list>
+  </mat-tab> -->
+<!-- <mat-tab label="Setup-View"></mat-tab> -->
+<!-- <mat-tab label="Exerciser-view"> -->
+<!-- <div>
+      <div class="exerciser-view-content">
+        <app-exerciser-view></app-exerciser-view>
+      </div>
+
+    </div>
+  </mat-tab>
+  <mat-tab label="Plot-View"></mat-tab>
+  <mat-tab label="Decoded Result">
+    <app-decoded-result></app-decoded-result>
+  </mat-tab>
+  <mat-tab label="SelectedFrame View"></mat-tab>
+</mat-tab-group> -->
+
+<div>
+  <div class="main-wrapper">
+    <div class="left-part">
+      <div
+        class="exerciser-container"
+        [ngStyle]="{ 'height.px': exerciserHeight }"
+      >
+        <app-exerciser-view></app-exerciser-view>
+      </div>
+      <div
+        class="resizer"
+        (mousedown)="onMouseDownExerciser($event)"
+        (touchstart)="onTouchStartExerciser($event)"
+      ></div>
+      <div
+        class="trigger-container"
+        [ngStyle]="{ 'height.px': totalAvailableHeight - exerciserHeight }"
+      >
+        <app-trigger-view></app-trigger-view>
+      </div>
+    </div>
+    <div class="right-part">
+      <app-plot-view class="plot-view"></app-plot-view>
+      <div class="decoded-result-wrapper">
+        <div class="decoded-result-left">
+          <app-decoded-result class="decoded-result"></app-decoded-result>
+        </div>
+        <button class="decoded-resizer">.</button>
+        <div class="decoded-result-right">
+          <app-selected-frame-view
+            class="selected-frame-view"
+          ></app-selected-frame-view>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer-view></app-footer-view>
+</div>

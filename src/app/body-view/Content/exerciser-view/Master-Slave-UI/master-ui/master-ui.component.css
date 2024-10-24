@@ -1,0 +1,71 @@
+.exerciser-form  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .form-field {
+    width: 100%;
+  }
+  .wrapcontainer{
+    display: flex;
+  justify-content: space-between;
+  }
+  .period-container,
+  .gap-delay-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .period-container .form-field,
+  .gap-delay-container .form-field {
+    width: 48%;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  .exerciser-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  /* .form-container {
+   
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+ 
+    max-width: 500px;
+    margin: auto;
+  }
+   */
+
+  .twofeild{
+    display: flex;
+    flex-direction: row;
+  }
+  .label-container {
+ 
+    background-color: #f9f1f6; /* Blue background */
+    color: rgb(20, 12, 12);
+    padding: 8px;
+
+    min-width: 150px; /* Adjust width to match the label area */
+    text-align: left;
+    border: 1px;
+  }
+  .MessageTypecontainer{
+    padding: 8px;
+   background-color: white;
+    min-width: 200px; /* Adjust width to match the label area */
+    text-align: left;
+    border:1px;
+  }
+  
+  
+  textarea {
+    min-height: 80px; /* To ensure a decent size for text area */
+  }
+  
+ 

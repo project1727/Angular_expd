@@ -1,0 +1,68 @@
+
+.bus-configuration {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.mat-toolbar {
+  background-color: #800080;
+  color: white;
+  font-size: medium;
+  height: 50px;
+  padding: 0 10px; 
+  gap: 10;
+}
+
+.mat-icon{
+  color: #f0f8ff;
+}
+
+ .configuration-form {
+  width: 400px; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  padding: 10px; 
+} 
+
+.mat-form-field {
+  width: 100%;
+  font-size: small;
+}
+
+.button-group {
+  display: flex;
+  justify-content:flex-start;
+  
+ flex-direction: row;
+ gap: 100px;
+ 
+}
+
+button.mat-raised-button {
+  font-size: small; 
+  padding: 20px 10px; 
+
+  
+} 
+
+.BusButton{
+  color: #f0f8ff;
+  background-color: #8d3d8d;
+  margin: 20px;
+}
+
+.BusButton:hover{
+  background-color: #dcc0dc;
+  color: black;
+}
+/* 
+.full-width-dialog .mat-dialog-container {
+  max-width: 40vw !important;
+} */
+
+/* .BusButton:active{
+  background-color: #800080;
+} */

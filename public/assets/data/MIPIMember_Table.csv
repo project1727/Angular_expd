@@ -1,0 +1,754 @@
+0105,Intel Corporation
+0101,Nokia Corporation
+010B,Samsung Electronics
+0104,STMicroelectronics N.V.
+0102,Texas Instruments Incorporated
+0126,Toshiba Corporation
+0112,Advanced Micro Devices Inc.
+01E1,Advantest
+0177,Analog Devices Inc.
+0259,Analogix Semiconductor Inc.
+02BA,Apple Inc.
+0154,Arasan Chip Systems Inc.
+0103,ARM Limited
+019B,ATMEL
+0107,Avago Technologies
+0318,Avery Design Systems Inc.
+0294,BitifEye Digital Test Solutions GmbH
+012D,Broadcom
+01C9,Cadence Design Systems Inc.
+01FA,Cirrus Logic
+01CB,Dialog Semiconductor
+0390,DisplayLink Corp.
+028A,Faraday Technology Corporation
+0272,Google Inc.
+01EB,Graphin Co. Ltd.
+025A,HDL Design House
+01A8,HiSilicon Technologies
+011A,Infineon Technologies AG
+032B,Introspect Test Technology Inc.
+023D,Keysight Technologies Inc.
+0191,Knowles Electronics
+019E,Lattice Semiconductor Corp.
+0155,Lauterbach GmbH
+0227,LeCroy
+012A,LG Electronics Inc.
+01C1,LnK
+02ED,M31 Technology Corp
+011C,Marvell Semiconductor
+019F,Maxim Integrated Products Inc.
+0208,MediaTek
+0135,MediaTek Inc.
+029C,Mentor Graphics Corporation
+0133,Micron Technology Inc.
+02CB,Microsoft Corporation
+0173,Mitsumi Electric Co. Ltd.
+0199,Mixel Inc.
+020C,Murata Manufacturing
+0160,Novatek Microelectronics Corp.
+0120,NVIDIA
+011B,NXP Semiconductors
+0121,OmniVision Technologies Inc.
+012E,ON Semiconductor
+0298,Parade Technologies Ltd.
+02CD,Phison Electronics Corporation
+0353,Protocol Insight LLC
+03C6,Qorvo US Inc.
+0217,Qualcomm Incorporated
+01BB,QuickLogic
+0276,R2 Semiconductor
+025D,Realtek Semiconductor
+0266,Renesas Electronics Corporation
+03B8,Robert Bosch GmbH
+01E4,Silicon Line GmbH
+024A,SK Hynix
+01A5,Skyworks Solutions Inc.
+0281,SmartDV Technologies India
+038C,Socionext Inc.
+01B0,Sony Corporation
+010D,Sony Mobile Communications
+01F1,Spreadtrum Communications Shanghai
+023C,Synaptics
+0148,Synopsys Inc.
+01D1,Tektronix Test and Measurement
+0179,Teradyne Inc.
+02AB,Testronic Laboratories
+020A,The Moving Pixel Company
+028D,UNH-IOL
+0206,VLSI Plus
+0131,Western Digital Technologies Inc.
+0387,AAC Technologies Pte Ltd.
+01F7,ACCO Semiconductors Inc.
+0336,Accverinos Co. Ltd.
+0261,ACP Advanced Circuit Pursuit
+0349,Airoha Technology Corp.
+02AE,Alchip Technologies
+0346,Aldebaran-Robotics
+0312,Algoltek Inc
+02D5,Allied Vision Technologies
+0332,Allwinner Technology Co. Ltd.
+0149,Alps Electric Co. Ltd.
+026B,Altasens Inc.
+023A,Altek Corporation
+017B,Ambarella
+03CE,AMIMON
+0274,Amlogic Inc.
+02E0,Anapass
+03C9,Aquantia Corp.
+030B,Aragio Inc.
+01DD,Asahi Kasei EMD Corp.
+03F6,Aspeed Technology Inc.
+0213,ASSET InterTech Inc.
+03EA,ASTRODESIGN Inc.
+02A0,ASUSTek COMPUTER INC.
+036E,Atomos Engineering Pty Ltd.
+0186,AU Optronics Corp.
+02E1,Audio Precision
+0108,Austriamicrosystems.
+03B2,Autoliv
+0348,Avegant Corporation
+03FD,Axell Corporation
+023F,Axis Communications AB
+03BB,Basler AG
+02E2,Baysand Inc.
+0383,Beijing Pinecone Electronics Co. Ltd.
+02AD,BitSim AB
+038D,Brillnics Inc.
+02E5,BriteIP Microelectronics
+0309,Canon
+03F9,CAST Inc.
+027F,Cavendish Kinetics Ltd.
+02B7,Chikuma Seiki Co. Ltd.
+01A2,Chimei Innolux
+0347,China UniChip Technologies Inc.
+03E0,Chip Wealth Technology Ltd.
+02F6,Chroma Ate Inc.
+02A1,Cisco Systems Inc.
+033C,Cista System Corp.
+0144,Citizen Finedevice Co. Ltd.
+02DF,Compund Photonics
+02F2,Critical Link LLC
+0201,Curious Corp.
+021F,DA-Design Oy
+0357,Daqri LLC
+03BA,Datalogic IP Tech S.r.l.
+0339,Dell Inc.
+03CD,Delta Information Systems Inc.
+03AD,Digital Blocks Inc.
+03C8,DNP LSI Design Co. Ltd
+0239,Dongbu Hitek
+02A2,Dongwoon Anatech
+02B8,Dream Chip Technologies
+0268,DSP Group Ltd.
+02F1,E2V Semiconductors
+0400,EasyIC Design SRL
+03E8,ENVYLOGIC
+0248,EPCOS AG
+0341,Ericsson AB
+0145,ESS Technology Inc.
+0356,ETA Devices Inc.
+0237,Ethertronics Inc
+0369,Etra Technologies Limited
+02CF,Etron Technology Inc.
+0184,Fairchild Semiconductor Int'l
+02BC,Ferfics Limited
+03BE,Fingerprint Cards AB
+02FF,Fitipower Integrated Technology
+02A7,Flir Systems Inc.
+01E2,FocalTech Systems Ltd.
+022C,ForteMedia
+03CC,Forza Silicon Corporation
+0295,Fraunhofer Institute for Integrated Circuits IIS
+01B2,Fujikura Ltd.
+0370,Fuzhou Rockchip Electronics Co. Ltd.
+03D8,Gaci Rugged Systems
+02B0,Galaxycore Inc.
+0232,Gazogiken Co. Ltd.
+0258,GDA Technologies
+0202,Genesys Logic Inc.
+03AF,Gentex Corporation
+02D1,Geo Semiconductor
+035F,Global Silicon Studios Inc.
+01E6,Global Unichip Corp.
+03DD,GLOBALFOUNDRIES U.S. Inc.
+0350,GoPro Inc.
+03A4,Gowin Semiconductor
+03D9,Green Hills Software
+03E3,Greenliant Systems
+03FC,GreenWaves Technologies
+0171,Guobo Electronics Co. Ltd.
+03E2,Habana Labs Ltd.
+02C5,Harman Automotive Division
+032E,Heptagon Micro Optics Pte Ltd.
+0162,Himax Technologies Inc.
+03FF,Hitachi Automotive Systems Ltd.
+033D,Hong Kong Huntersun Electronic Limited
+02B3,Hoya Corporation
+0296,HTC Corporation
+0401,HYC USA Inc.
+035B,I.S.X. Corporation
+02D9,iCatch Technology Inc.
+0222,IDT
+03DB,iFlight Technology Company Limited
+030E,IIX Co.
+01A7,Ili Technology
+0118,Imagination Technologies Limited
+03B4,Imaging Device Technologies Corp.
+0361,Immersive Media Co.
+03B0,Impinj
+02F5,Innotech Corporation
+0374,Inova Semiconductors
+01D2,Intersil Corporation
+013F,Intrinsix Corp.
+0351,InvenSense Inc.
+03EC,IRISO Electronics Co. Ltd.
+0388,iSentek Inc.
+03C7,Istuary IoT Labs Inc.
+02FD,ITE Tech. Inc.
+0193,Japan Aviation Electronics Industry Ltd (JAE)
+019C,Japan Display Inc.
+03D3,Javad GNSS Inc.
+02CC,King Yuan Electronics Co. Ltd.
+03E7,Konrad GmbH
+0328,Kopin Corporation
+02BF,Kyocera
+02F8,Lab126
+034E,Lansus Technologies Inc. Formerly belonging to Nationz Technologies
+03FE,LeddarTech Inc.
+0358,Lenovo (Japan) Ltd.
+01DA,LG Display
+01F0,Liteon Technology Corp.
+03DE,LJ Solution
+03C0,Logic Fruit Technologies Pvt. Ltd.
+032F,Lontium Semiconductors
+03E1,Luxshare-ICT Inc.
+0330,Macnica Inc.
+0391,Magic Leap Inc.
+013D,MagnaChip Semiconductor Ltd.
+03E9,Mapper.ai
+03AA,Maxscend Microelectronics Company Limited
+03C1,Mcoretek Co. Ltd.
+02F7,Megachips Corporation
+0251,Memsic
+03A8,MicaSense
+03A3,Micronics Japan Co. Ltd.
+034D,Microsemi Corp.
+02BB,Microvision
+02D3,Mitsubishi Electric Corporation
+025C,Movidius Ltd.
+0389,mPerpetuo Inc.
+01CC,MStar Semiconductor Inc.
+0395,Nanjing New Star Electronics Technology
+029F,Nascent Objects Inc.
+03BD,Net Vision Corporation
+0292,New Japan Radio Co. Ltd.
+02FE,Nikon Corporation
+0333,Nintendo Co. Ltd.
+0291,Nippon Systemware Co. LLC
+014B,Nordic Semiconductor ASA
+021E,Northwest Logic
+03F0,Novaco Microelectronics Technologies Ltd.
+033E,Nutoton Technology Corporation America
+0314,Oculus VR Inc.
+02C1,Olympus Corporation
+0365,Orlaco Products
+0140,Panasonic Corporation
+0303,Parrot
+03F1,People & Chips Inc.
+03EB,PiKSELiM Elektronik San. ve Tic. A.S.
+01CA,PixArt Imaging Inc.
+016D,Pixelplus co. Ltd.
+0307,Pixelworks Inc
+03E6,PLC2 Programmable Logic Competence Center GmbH
+03E5,Polycom Inc.
+02AC,Prodigy Technovations Pvt.
+03A5,Pulse Finland Oy
+03A6,Quanergy Systems Inc.
+03D7,Rainbow Robotics
+03F5,RAONTECH
+0397,Raspberry Pi (Trading) Limited
+01D0,Raydium Semiconductor Corp.
+0323,RED Digital
+033F,RichWave Technology Corporation
+01F3,Ricoh
+0399,RightHand Technologies
+017E,Rohde & Schwarz Gmbh & Co Kg
+0158,Rohm Co. Ltd
+0311,Samsung Electro-Mechanics
+0327,SANA Semiconductors Limited
+03D2,Schoelly Fiberoptic GmbY
+03B9,Semtech Corporation
+03B6,Sensirion AG
+026C,Sequans Communications
+03BC,Shanghai Will Microelectronics Ltd.
+016E,Sharp Corporation
+0241,Shikino High Tech Co. Ltd
+03A1,Shimadzu Corp.
+035C,SignalCraft Technologies Inc.
+02D6,Silicon Integrated Systems Corp.
+0188,Silicon Laboratories Inc.
+03B5,Silicon Library Inc.
+03A2,Silicon Mitus
+01FB,Silicon Motion
+02EC,Silicon Optronics
+022A,Silicon Works
+03F4,SiliconCube
+03A9,SiliconGo Microelectronics Inc.
+03AE,Silvaco Inc.
+0398,Sirin Mobile Technologies AG
+0163,Sitronix
+02E9,Smarter Microelectronics
+021D,SMK Corp.
+03D5,Snap-on
+0157,Solomon Systech Ltd.
+01EF,Sonix Technology Co. Ltd.
+03CF,Special Technologies Ltd.
+03D0,Special Technologies Ltd.
+039A,Spectra7 Microsystems
+03DF,SPEKTRA GmbH Dresden
+03D4,Square Inc.
+0269,StreamDSP LLC
+0289,StreamDSP LLC
+039B,Stryker
+02C0,Sunplus Innovation Technologies Inc.
+0139,Taiyo Yuden Co. Ltd.
+0385,Tateno Dennou Inc.
+0235,TDK Corporation
+039C,Techpoint Inc.
+03AB,Tendyron Corp.
+029D,Tera Probe Inc.
+03A7,Tesla Motors
+034B,Test Evolution
+03C2,Thales UK Ltd.
+03AC,The LightCo Inc.
+022B,THine
+036B,Think Silicon Ltd.
+035D,TLi Inc.
+02FA,Tobii Technology AB
+038E,Top Engineering
+031A,Toppan Technical Design Center Co. Ltd.
+032D,Trigence Semiconductor Inc.
+02F4,Truechip Solutions PVT LTD
+03CB,Tyco Electronics Japan
+0264,u-blox AG
+028E,UltraSoC Technologies
+0384,UniTest Inc.
+0200,Valens
+03CA,Valve Corporation
+0338,VanChip Technologies Limited
+03ED,Vector Informatik GmbH
+03B1,VeriSilicon Microelectronics Co. Ltd.
+039D,VIA Alliance Technology
+039E,Waves Audio
+03DC,Wavious LLC
+03F2,WDH A/S
+0355,Wipro Ltd.
+0243,WiSpry Inc.
+039F,Wistron
+03DA,Wuhan Jingce Electronic Technology Co. Ltd.
+0393,WZ Technology Inc.
+0308,Xacti Corp
+03A0,Xeltek
+03C4,XFAB France
+01EA,Xilinx Inc.
+03C3,YIC System
+03C5,Yokogawa Meters & Instruments
+03D1,ZF TRW Automotive
+01AF,3D Labs
+0254,AAC Acoustic Technologies
+02C4,Aava Mobile Oy
+0305,AC6
+038A,Acano Ltd.
+0279,Acsys
+01BE,Actel
+0220,Actions Semiconductor
+02B9,Active-Semi Inc.
+01DB,Acutelogic Corporation
+0359,Advanced Ceramic X Corporation
+015B,Advasense
+024C,Aeroflex
+0190,Agere Systems
+0195,Agilent Technologies Inc.
+01EE,AIE Etudes SA
+02C3,Aizyc Technology Private Limited
+015C,Akustica Inc.
+02DA,Alcor Micro Corp.
+0214,Ali Corporation
+0218,Ali Corporation
+01ED,Altair Semiconductor
+017F,Altera Corp.
+014A,Altus Technology Inc.
+026D,Always Innovating
+03F8,AMAC ASIC- und Mikrosensoranwendung Chemnitz GmbH
+022F,Amalfi Semiconductor
+02AA,Amimon
+026E,Amphenol Corporation
+0270,ANADIGICS
+030D,Analog Bits
+0180,Andes Technology
+016A,Anoto AB
+01C8,Anritsu Corporation
+0322,AnSem NV
+0136,Anyka Technologies Corporation
+0236,Aptina Imaging
+02B5,Arium
+02E3,Arrow Devices PVT LTD
+024B,Arteris Holdings Inc.
+0170,Artimi
+02F3,Artvision Technologies Inc.
+0192,Association of Next Generation Computing Industry
+0226,Atra Vision Inc.
+0113,Atsana Semiconductor Corp.
+02BE,Audience. Inc.
+016C,AudioAsics A/S
+0271,Augusta Technology USA Inc.
+01A1,Aurora Optical
+022D,Aurora VLSI
+0325,AVAL Data Corporation
+0340,Avnera Corporation
+0343,Ball Aerospace & Technologies Corp.
+0250,Beceem Communications
+0320,Beijing Acuti Microsystems
+010C,BenQ Mobile GmbH &Co. OHG
+03BF,Bittium Wireless Ltd.
+01CE,Bitwave Semiconductor
+0171,Bivio
+02EA,Black Sand Technologies
+017D,Bluespec Inc.
+034C,BOE Technology Group Co. Ltd.
+024F,Borqs Ltd.
+01D7,bTendo
+01DF,BYD Microelectronics Co. Ltd
+0129,California Micro Devices
+0114,Cambridge Silicon Radio Ltd.
+02DD,Camplex LLC
+0394,Canaantek
+0240,Canesta
+01F6,Canesta Inc.
+03FB,CEDA Labz
+0205,Celestial Semiconductor Inc.
+0335,Cellwise Microelectronics Co. Ltd.
+0182,Centrality Communications Inc.
+0152,Chipnuts Technology (Shanghai) Inc.
+01BD,Chrontel Inc.
+0255,Cloud Four
+0222,CMOSIS
+0354,Cognitive Systems Corp.
+0262,Cognovo Ltd.
+0234,Comsys Communication and Signal Processing
+036D,Conexant Systems Inc.
+013B,Core Logic Inc.
+01FC,Cosmic Circuits Pvt Ltd
+01BA,Cypress Semiconductor Corp.
+0176,Cypress Semiconductor Inc.
+02C7,CyWee Group Limited
+030F,Dai Nippon Printing Co. Ltd.
+0392,Dediprog Technology co. Ltd.
+0345,Dell Inc.
+0301,DENSO Corp
+0203,DFT Microsystems Canada Inc.
+0164,DGIST
+0178,Dialog Imaging System
+03B3,Digital Core Design
+0137,Discretix Technologies
+0245,Dongbu HiTek
+0317,DRS Technologies Inc.
+02A5,E-Globaledge Corporation
+0221,EADS Secure Networks OY
+0373,EASII IC
+0198,Eastman Kodak Company
+0290,ECT Inc.
+021C,einfochips Inc.
+0215,Elan Digital Systems Ltd.
+01FF,ELECS
+019D,Elektrobit Wireless Communications Ltd
+015D,Elpida Memory Inc.
+0300,Elvees Neotek
+021B,Empty
+02C8,Emulation and Verification Engineering
+014C,Enpirion Inc.
+0324,EnSilica Limited
+0109,Ericsson AB
+01A3,Esterel Technologies
+0337,Evatronix S. A.
+036A,eWBM
+0386,Eyenix Co. Ltd.
+0302,F-Brain Co. LTD
+016F,Fangtek Ltd.
+033B,FAZTech Research Ltd.
+031C,FCI Japan K.K.
+01E5,FCI's-Hertogenbosch BV
+01DE,Finisar-Advanced Optical Components Div
+02D8,Flat Frog Laboratories
+02D7,FlatFrog Laboratories AB
+026F,Flextronics Innovative Development
+01C6,Foveon Inc.
+0151,Freescale Semiconductor
+01AC,Fuji Electric Device Technology Co. Ltd.
+01BC,Fuji Xerox Co. Ltd.
+0242,Fujifilm Corporation
+01BF,Fujitsu Limited
+0150,Fujitsu Microelectronics Europe GmbH
+027A,Funai Electric Co. Ltd
+01FE,Garmin
+013E,GCT Semiconductor
+02E4,Generalplus Technology Inc.
+02D4,Genetec Corporation
+023B,Gennum Corp
+031F,GigaLane
+032C,Granite River Labs Inc.
+02A4,Guandong Nufront
+0352,Haoxin Microelectronics Technology (Shanghai) Co. Ltd.
+02DE,HCL Technologies
+035E,Hewlett-Packard Co.
+02A6,Hioki E.E. Corporation
+0183,Hirose Electric Co. Ltd.
+0253,Hitachi Metals
+01CD,Hitachi Ltd.
+03D6,HivICs
+0265,Hon Hai Precision Co. Ltd
+01A6,Honda Tsushin Kogyo Co Ltd.
+027B,HongKong Applied Science and Technology Research Institute
+0187,Hosiden Corporation
+01AD,I-PEX Co. Ltd.
+01AB,IBIDEN USA R&D Inc.
+0142,IC Media Corporation
+0117,Icera Inc.
+017C,iKoa Corporation
+0119,IMEC
+0299,Immedia Semiconductor
+02EB,Infinite Z
+032A,Infomax Communication Co. Ltd.
+03E4,InfoVision Optoelectronics (Kunshan) Co. Ltd.
+0285,Innofidei Inc
+01D5,Innolux Display Corp.
+0125,Innosilicon Technology Ltd.
+0209,Inomize Ltd.
+0313,Inside Secure
+018E,Insilica
+0231,Insilica
+01E0,Integrated Device Technology (IDT)
+01C3,InterDigital Communications LLC
+0212,Intermec Technologies Corp.
+01FD,Invisage
+0362,Invisible Industries
+028F,IO Semiconductor Inc.
+024E,IP Wireless
+037C,Iron Device Corp.
+0138,ITRI/SoC Technology Center
+01B7,J.S.T. Mfg Co. Ltd.
+0287,Javelin Semiconductor
+0284,JMicron Technology Corp.
+033A,KARL STORZ Imaging Inc.
+02AF,Kawasaki Microelectronics
+025B,Keynote Systems Inc.
+03B7,Kionix Inc.
+0181,Kodak
+0219,Konica Minolta Opto Inc.
+0244,Korea Telecom
+0273,Kozio Inc.
+0321,Kumu Networks Inc.
+0283,Kyocera Elco Corporation
+015A,LAONPEOPLE
+020F,Lattice Semiconductor
+0147,Leadis Technology Inc.
+0165,LetsVision Co. Ltd.
+0368,Logic PD Inc.
+01C5,Logipard AB
+01E3,Logitech
+02DC,Lytro Inc.
+011D,M-Systems Flash Disk Pioneers
+038F,M.I.T. Lincoln Laboratory
+02FC,Marshall Electronics Inc.
+0252,Masamb Electronics Systems Private Ltd
+027E,Masterimage3d Asia LLC
+0381,Maxscend Technologies
+0230,MCCI Corporation
+010A,Mentor Graphics Corporation
+02B1,Micrel
+02B2,Micrel
+034A,Micro Mobio
+02E6,Millogic
+0334,Minato Electronics Inc.
+030A,MindShare Inc.
+01D9,Mindspeed
+0280,MIPS Technologies
+0194,MIPSABG Chipidea Lda
+01B5,Mirics Semiconductor
+0197,Mirics Semiconductor
+01D8,Mobilygen Corp.
+0196,Molex Japan Co. Ltd.
+01DC,MoSys Inc.
+0128,Motorola Mobility Inc.
+02C6,Motorola Solutions Israel Ltd.
+034F,Movea
+0233,Mtekvision
+01F8,Mtekvision Co. Ltd.
+012B,Mtekvision Co. Ltd.
+031D,MultiTouch Ltd.
+031E,Naim Audio Ltd.
+01C2,Nanotech Semiconductors Ltd
+029B,National Instruments
+011E,National Semiconductor
+026A,NEC Corporation
+0260,NEC Corporation [an affiliate of NEC Casio Mobile]
+0141,NEC Electronics Corporation
+011F,NeoMagic Corporation
+0166,Nethra Imaging
+01C0,Neuricam SPA
+02DB,Newlans Inc.
+021A,Newport Media Inc.
+01D3,Nextest Systems Corp.
+028B,Nextivity Inc.
+0159,Nextreaming Corporation
+0331,Nintento Co. Ltd
+016B,Novelics Design
+0278,nSys Design Systems
+027C,Nujira Ltd.
+0319,Nuvoton Technology Corporation America
+0224,O2 Micro
+01C4,Octasic
+018C,Oki Electric Industry Co. Ltd
+017A,Omron corporation
+031B,Onestar Technology Co. Ltd.
+0275,OpenPeak Inc.
+0225,Option NV
+018B,Orise Technology
+02E7,Ostendo Technologies
+0172,Palm Inc.
+02D2,Peraso Technologies
+03F7,PercepTonic
+023E,Peregrine Semiconductor
+015F,PicoNetics Inc.
+027D,Pixim Inc.
+01B3,Pixtronix Inc.
+01A4,PMC-Sierra Inc.
+0257,Point Grey
+02C2,poLight AS
+0161,PortalPlayer Inc.
+014D,Pulse MEMS Aps
+0211,Pulsus Technologies
+02EE,Qnovo
+0310,Quanta Computer Inc.
+02B4,Quantance Inc.
+03F3,Radrock Technology Co. Ltd.
+03FA,Rambus Inc.
+0282,Rapid Bridge LLC
+029A,RDA Microelectronics Inc.
+02F9,ReconRobotics Inc.
+0122,Renesas Technology Corp.
+01D4,Research In Motion Ltd
+036C,REVSONIC Corporation
+0134,RF Micro Devices
+0326,RFaxis Inc.
+0175,RFI Global Services Ltd.
+0277,Richtek Technology
+0344,RichWave Technology Corporation
+01F5,Rohde & Schwarz Gmbh & Co Kg
+0153,Rohm Co. Ltd.
+0288,S3 Graphics Inc.
+025E,Sand 9 Inc.
+01C7,Sandbridge Technologies Inc.
+02E8,Sanei Hytechs Co. LTD
+01A9,Sanyo
+01EC,Sanyo Semiconductor Co. Ltd.
+0210,Scalado
+020E,Scalado AB
+0256,ScriptPro
+0168,Seagate Technolgy
+0169,Seagate Technologies LLC
+0246,SeekTech
+0123,Seiko Epson Corp.
+01E7,Seiko Instruments Inc.
+0364,Semiconductor Energy Laboratory Co.
+0124,Sendo Ltd.
+01E8,Sequoia Communications Corp.
+029E,SETi Co. Ltd.
+0315,Sibridge Technologies
+0146,Sierra Nevada Corporation
+01B4,SiGe Semiconductor Inc.
+028C,Sigma Designs
+01C5,Signal Integrity Software Inc. (SiSoft)
+0316,Silab Tech PVT Limited
+0204,Silicon Hive
+0207,Silicon Hive
+01B6,Silicon Image Inc.
+0267,SiliconBlue Technologies Corp.
+0174,SiliconFile Technologies Inc.
+02A3,SiOnyx Inc.
+0293,SiPort Inc.
+0228,Sirf Technology
+020D,Sirf Technology
+02A8,SiTune
+012C,SMaL Camera Technologies
+014F,SmediaTech
+0229,SMSC
+038B,SolidGear Corp.
+01B1,Sonaptic Ltd.
+018A,Sony
+0111,Spansion
+01D6,Spansion
+025F,ST-Ericsson [an affiliate of STMicroelectronics N.V.]
+0130,StarCore LLC
+01F2,Stretch Inc.
+024D,Sumitomo Electric Industries Ltd.
+0189,Sumitomo Electric Printed Circuits Inc.
+013C,Sunplus mMobile Inc.
+02CE,SuperPix Micro Technology Co. Ltd.
+0125,Symbian Software Ltd.
+010E,Synaptics Inc.
+0249,Syndiant Inc.
+0382,Tabor Electronics Ltd.
+02C9,Tagore Technology
+0360,Technissiom Inc.
+02BD,Teleca USA Inc.
+018D,Telechips Inc.
+0238,Telegent
+035A,Tempo Semiconductor
+0306,Tensorcom
+02B6,Teradici
+02F0,Terawins Inc.
+0363,Test and Verification Solutions
+02A9,Tianma Microelectronics (USA) Inc.
+0329,Titan Medical Inc.
+0132,Tomato LSI
+0167,Toppoly Optoelectronics Corp.
+03EE,Total Phase
+0127,TransChip Inc.
+0297,TranSwitch (Israel) Ltd.
+0286,TriQuint Semiconductor Inc.
+010F,TTPCom Ltd.
+02D0,TTTech Automotive GmbH
+019A,Tyco Electronics
+0156,UltraChip Inc.
+036F,Veriest Solutions
+022E,Verification Technology
+0247,Verigy
+0304,Via Technologies
+0223,VIA Telecom
+014E,VIA-Telecom Inc.
+0110,Vimicro Corporation
+01F9,Virage Logic Inc.
+020B,Virtus Advanced Sensors
+0216,Vista Point Technologies
+01AE,VLSI Plus Ltd.
+01AA,Warthman Associates
+013A,Wavecom S.A.
+01E9,Wavesat Inc.
+01B8,WiLinx Corp.
+02FB,Wimatek Systems Inc.
+0185,Winbond Electronics Corp.
+01CF,Wintek Corporation
+030C,Wipam Inc.
+015E,Wisepal Technologies Inc.
+012F,Wolfson Microelectronics
+03EF,Wuhan China Display Optoelectronics Technology Co. Ltd.
+0263,Xiamen Yuzhen IC Technologies Co. Ltd.
+0143,Xilinx
+01B9,XMOS Semiconductor Ltd.
+018F,Xponent Photonics Inc.
+01A0,Yamaha Corporation
+0396,Yuxin IC
+0342,ZMDI America Inc.
+0116,Zoran Corporation
+02CA,ZTE Microelectronics Technology Co. Ltd.

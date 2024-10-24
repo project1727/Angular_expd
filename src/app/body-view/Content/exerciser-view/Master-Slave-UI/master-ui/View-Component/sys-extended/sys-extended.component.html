@@ -1,0 +1,61 @@
+<form>
+  <div class="wrap-container">
+    <!-- TSU-STA -->
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>tSU_STA (ns)</mat-label>
+          <input matInput [(ngModel)]="SysExtended.tSU_STA" name="tSU_STA" placeholder=" tSU_STA in ns">
+        </mat-form-field>
+  <!-- TSU-STO-->
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>tSU_STO (ns)</mat-label>
+          <input matInput [(ngModel)]="SysExtended.tSU_STO" name="tSU_STO" placeholder=" tSU_STO in ns">
+        </mat-form-field>
+  </div>
+
+
+  <div class="wrap-container">
+    <!--tSU_DAT-->
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>tSU_DAT (ns)</mat-label>
+      <input matInput [(ngModel)]="SysExtended.tSU_DAT" name="tSU_DAT" placeholder=" tSU_DAT in ns">
+    </mat-form-field>
+
+    <!-- IBI Abort Count -->
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>IBI Abort Count</mat-label>
+      <input matInput [(ngModel)]="SysExtended.IBIAbortCount" name="IBI Abort Count" placeholder="Enter IBI Abort Count">
+    </mat-form-field>
+  </div>
+
+  
+
+
+  <div class="gap-delay-container">
+    <mat-form-field appearance="outline" class="form-field">
+      <!--Ack Cycle-->
+      <mat-label>Ack Cycle</mat-label>
+      <div class="wrapcontainer"> 
+     <mat-select [(ngModel)]="SysExtended.ACKCycle" name="aCKCycle">
+          <mat-option *ngFor="let type of ackcycle" [value]="type">{{ type }}</mat-option>
+        </mat-select>
+      </div>
+    </mat-form-field>
+
+    <!-- I2C mODE -->
+    <mat-form-field appearance="outline" class="form-field">
+      
+      <mat-label>Ack Cycle</mat-label>
+      <div class="wrapcontainer"> 
+     <mat-select [(ngModel)]="SysExtended.I2CMode" name="aCKCycle">
+          <mat-option *ngFor="let type of I2CMode" [value]="type">{{ type }}</mat-option>
+        </mat-select>
+      </div>
+    </mat-form-field>
+  </div>
+  
+
+  <!--Add Button-->
+  <div class="button-container">
+    <button mat-raised-button color="primary" (click)="onButtonClick()">Add</button>
+  </div>
+</form>

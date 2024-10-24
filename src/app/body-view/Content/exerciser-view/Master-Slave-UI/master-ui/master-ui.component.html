@@ -1,0 +1,38 @@
+<mat-tab-group (selectedTabChange)="onTabChange($event)">
+  <mat-tab label="Sys">
+      <app-sys class="exerciser-form" ></app-sys>
+      <!-- <app-sys  class="exerciser-form"
+      (sysDataAdded)="onSysDataAdded($event)"></app-sys> -->
+  </mat-tab>
+ <!-- Sys Component
+<app-sys (sysDataAdded)="onSysDataAdded($event)"></app-sys>
+
+ Summary Component 
+<app-summary [sysData]="sysData"></app-summary> -->
+
+  <mat-tab label="SysOD">
+      <app-sys-od class="exerciser-form"></app-sys-od>
+  </mat-tab>
+
+  <mat-tab label="SysExtended">
+      <app-sys-extended class="exerciser-form"></app-sys-extended>
+  </mat-tab>
+
+  <mat-tab label="Bus">
+     <app-bus class="exerciser-form"></app-bus>
+  </mat-tab>
+
+  <mat-tab label="Loop">
+      <!-- Content for Loop Tab -->
+  </mat-tab>
+
+  <mat-tab label="BufferAccess">
+      <!-- Content for BufferAccess Tab -->
+  </mat-tab>
+
+  <mat-tab label="Summary">
+      <!-- Content for Summary Tab -->
+      <!-- <app-summary *ngIf="sysData" [sysData]="sysData"></app-summary> -->
+       <app-summary></app-summary>
+  </mat-tab>
+</mat-tab-group>

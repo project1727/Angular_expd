@@ -1,0 +1,74 @@
+.plot {
+  display: flex;
+  border: 1px solid #D1D1D1;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+  .plot {
+    flex-direction: column;
+  }
+}
+
+.plot .plot__toolbar {
+  background-color: var(--color-primary);
+  width: 50px;
+}
+
+.plot .plot__toolbar ul {
+  display: grid;
+}
+
+@media screen and (max-width: 1199px) {
+  .plot .plot__toolbar {
+    order: -1;
+    width: 100%;
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .plot .plot__toolbar ul {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.plot .plot__toolbar ul li {
+  display: flex;
+  justify-content: center;
+}
+
+.plot .plot__toolbar ul li a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.plot .plot__toolbar ul li a:hover {
+  background-color: #368cc2;
+}
+
+.plot .plot__image {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #545454;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.plot .plot__image img {
+  object-fit: cover;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .plot .plot__image {
+    height: 200px;
+  }
+}

@@ -1,0 +1,191 @@
+<!-- <form >  -->
+    <!-- Message Type -->
+<!--    
+      <div class="twofeild">
+                <div class="label-container">
+                  <mat-label>Message Type</mat-label>
+                </div>
+                <div class="selection-container">
+                  <mat-select [(ngModel)]="selectedMessageType" name="messageType">
+                    <mat-option *ngFor="let type of MessageType" [value]="type">{{ type }}</mat-option>
+                  </mat-select>
+                </div>
+      </div>
+      -->
+    
+
+    <!-- BroadCast CCC -->
+      <!-- <div class="twofeild"  *ngIf="selectedMessageType ==='BroadCast'" >
+              <div class="label-container">
+            <mat-label>BroadCast CCC</mat-label>
+            </div>
+            <div class="selection-container">
+              <mat-select [(ngModel)]="selectedBroadCastCCC" name="BroadCastCCC" (selectionChange)="cmbCommandSelectionChanged()">
+                <mat-option *ngFor="let type of BroadcastCCC" [value]="type">{{ type }}</mat-option>
+              </mat-select>
+         </div>
+      </div>   -->
+  
+<!--Directed CCC-->
+         <!-- <div class="twofeild"  *ngIf="selectedMessageType === 'Directed'" >
+          <div class="label-container">
+        <mat-label>Directed CCC</mat-label>
+        </div>
+        <div class="selection-container">
+          <mat-select [(ngModel)]="selectedBroadCastCCC" name="DirectedCCC">
+            <mat-option *ngFor="let type of DirectedCCC" [value]="type">{{ type }}</mat-option>
+          </mat-select>
+    </div>
+   </div>  -->
+
+ <!--Node-->
+          <!-- <div class="twofeild"  *ngIf="selectedMessageType === 'Directed' || selectedMessageType ==='Private' || selectedMessageType ==='I2cMessage'">
+            <div class="label-container">
+            <mat-label>Node</mat-label>
+            </div>
+          <div class="selection-container">
+            <input matInput name="Data" >
+          </div>
+          </div> -->
+
+
+    <!--TransferType-->     
+    
+    <!-- <div class="twofeild"  *ngIf="selectedMessageType === 'Private' || selectedMessageType ==='I2cMessage'  ">
+      <div class="label-container">
+    <mat-label>Transfer Type</mat-label>
+    </div>
+    <div class="selection-container">
+      <mat-select [(ngModel)]="selectedTransferType" name="transfertype">
+        <mat-option *ngFor="let type of TransferTypes" [value]="type">{{ type }}</mat-option>
+      </mat-select>
+    </div>
+    </div>  -->
+    <!-- Data Input -->
+
+      <!-- <div class="twofeild" >
+        <div class="label-container">
+        <mat-label>Data</mat-label>
+        </div>
+      <div class="selection-container">
+        <input matInput name="Data" >
+     </div>
+     </div> -->
+   
+<!--Data Count-->
+<!-- <div class="twofeild" >
+  <div class="label-container">
+  <mat-label>Data Count</mat-label>
+  </div>
+<div class="selection-container">
+  <input matInput name="Data" >
+</div>
+</div> -->
+   
+     <!-- Stop Checkbox -->
+    <!-- <mat-checkbox >Stop</mat-checkbox> -->
+    
+    
+    <!-- Error Options -->
+     <!-- <div class="period-container">
+    <fieldset class="error-options">
+      <legend>Error</legend>
+      <mat-checkbox >Command Parity</mat-checkbox>
+      <mat-checkbox >Data Parity</mat-checkbox>
+    </fieldset>
+  </div>
+    -->
+  
+  
+  <!-- Add Button -->
+  <!-- <div class="button-container">
+    <button mat-raised-button color="primary" >Add</button>
+  </div>
+  </form> -->
+  <form >
+    <div class="twofield">
+      <div class="label-container">
+        <mat-label>Message Type</mat-label>
+      </div>
+      <div class="selection-container">
+        <mat-select [(ngModel)]="selectedMessageType" name="messageType">
+          <mat-option *ngFor="let type of MessageType" [value]="type">{{ type }}</mat-option>
+        </mat-select>
+      </div>
+    </div>
+  
+    <div class="twofield" *ngIf="selectedMessageType === 'BroadCast'">
+      <div class="label-container">
+        <mat-label>BroadCast CCC</mat-label>
+      </div>
+      <div class="selection-container">
+        <mat-select [(ngModel)]="selectedBroadCastCCC" name="BroadCastCCC">
+          <mat-option *ngFor="let type of BroadcastCCC" [value]="type">{{ type }}</mat-option>
+        </mat-select>
+      </div>
+    </div>
+  
+    <!-- <div class="twofield" *ngIf="selectedMessageType === 'Directed'">
+      <div class="label-container">
+        <mat-label>Directed CCC</mat-label>
+      </div>
+      <div class="selection-container">
+        <mat-select [(ngModel)]="selectedDirectedCCC" name="DirectedCCC">
+          <mat-option *ngFor="let type of DirectedCCC" [value]="type">{{ type }}</mat-option>
+        </mat-select>
+      </div>
+    </div> -->
+  
+    <!-- <div class="twofield" *ngIf="['Directed', 'Private', 'I2C_Message'].includes(selectedMessageType)">
+      <div class="label-container">
+        <mat-label>Node</mat-label>
+      </div>
+      <div class="selection-container">
+        <input matInput [(ngModel)]="txtSlave" name="txtSlave" required>
+      </div>
+    </div> -->
+  
+    <div class="twofield" *ngIf="['Private', 'I2C_Message'].includes(selectedMessageType)">
+      <div class="label-container">
+        <mat-label>Transfer Type</mat-label>
+      </div>
+      <div class="selection-container">
+        <mat-select [(ngModel)]="selectedTransferType" name="transfertype">
+          <mat-option *ngFor="let type of TransferTypes" [value]="type">{{ type }}</mat-option>
+        </mat-select>
+      </div>
+    </div>
+  
+    <div class="twofield">
+      <div class="label-container">
+        <mat-label>Data</mat-label>
+      </div>
+      <div class="selection-container">
+        <input matInput [(ngModel)]="txtData" name="data" required>
+      </div>
+    </div>
+  
+    <div class="twofield">
+      <div class="label-container">
+        <mat-label>Data Count</mat-label>
+      </div>
+      <div class="selection-container">
+        <input matInput [(ngModel)]="txtDCount" name="dataCount" required>
+      </div>
+    </div>
+  
+    <mat-checkbox [(ngModel)]="chkStop">Stop</mat-checkbox>
+  
+    <div class="period-container">
+      <fieldset class="error-options">
+        <legend>Error</legend>
+        <mat-checkbox [(ngModel)]="chkCP">Command Parity</mat-checkbox>
+        <mat-checkbox [(ngModel)]="chkDP">Data Parity</mat-checkbox>
+      </fieldset>
+    </div>
+  
+    <div class="button-container">
+      <button mat-raised-button color="primary" (click)="onButtonClick()">Add</button>
+    </div>
+  </form>
+  

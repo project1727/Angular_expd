@@ -1,0 +1,10 @@
+<div class="exerciser-container">
+    <h3>Exerciser View-Master Script</h3>
+  
+    <input type="file" (change)="onFileSelected($event)" accept=".txt" />
+  
+    <textarea rows="10" cols="50" [(ngModel)]="fileContent" spellcheck="false"></textarea>
+ 
+    <button mat-raised-button color="primary" (click)="OnbuttonClick()">Buffer Reset</button>
+    <button mat-raised-button color="primary" (click)="OnbuttonClick1()">Run</button>
+</div>

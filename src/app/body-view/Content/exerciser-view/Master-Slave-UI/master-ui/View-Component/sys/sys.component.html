@@ -1,0 +1,50 @@
+<form>
+  <div class="wrap-container">
+    <!-- Frequency -->
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>Frequency (KHz)</mat-label>
+      <input matInput [(ngModel)]="Sys.freq" name="frequency" placeholder="Enter frequency">
+    </mat-form-field>
+  </div>
+
+  <!-- High Period -->
+  <div class="wrap-container">
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>High Period (ns)</mat-label>
+      <input matInput [(ngModel)]="Sys.highTime" name="highPeriod" placeholder="Enter high period">
+    </mat-form-field>
+
+    <!-- Low Period -->
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>Low Period (ns)</mat-label>
+      <input matInput [(ngModel)]="Sys.lowTime" name="lowPeriod" placeholder="Enter low period">
+    </mat-form-field>
+  </div>
+
+  <!-- Inter Message Gap -->
+  <div class="gap-delay-container">
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>InterMessage Gap</mat-label>
+      <div class="wrap-container">
+        <input matInput [(ngModel)]="Sys.tIMG" name="interMessageGap" placeholder="InterMessage Gap">
+        <mat-select [(ngModel)]="Sys.resImg" name="imgReg">
+          <mat-option *ngFor="let type of ImgReg" [value]="type">{{ type }}</mat-option>
+        </mat-select>
+      </div>
+    </mat-form-field>
+
+    <!-- Clk-Data Delay -->
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label>Clk-Data Delay (ns)</mat-label>
+      <input matInput [(ngModel)]="Sys.tCO" name="clkDataDelay" placeholder="Enter delay">
+    </mat-form-field>
+  </div>
+
+  <!-- Add Button -->
+  <div class="button-container">
+    <button mat-raised-button color="primary" (click)="onButtonClick()">Add</button>
+  </div>
+</form>
+
+<!-- <app-summary *ngIf="sysSummaryData" [sysData]="sysSummaryData"></app-summary> -->
+
